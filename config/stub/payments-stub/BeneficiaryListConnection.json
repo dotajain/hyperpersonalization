@@ -1,0 +1,64 @@
+{
+    "beneficiaries": [
+        {
+            "id": "4bbcfd9d-c1b4-4a65-a694-b347711612e7",
+            "account": {
+                "id": "b80e95a0-6b60-45b2-8b0f-77f2355f3061",
+                "sort_code": "654321",
+                "account_number": "12345678"
+            },
+            "to_account": {
+                "sort_code": "654321",
+                "account_number": "43214321",
+                "name": "John White"
+            },
+            "display_name": "John White",
+            "reference": "88228822",
+            "permissions": {
+                "can_edit_reference": true,
+                "can_set_date_in_future": true,
+                "can_delete": true
+            }
+        },
+        {
+            "id": "4cccfd9d-c1b4-4a65-a694-b347711612e7",
+            "account": {
+                "id": "b80e95a0-6b60-45b2-8b0f-77f2355f3061",
+                "sort_code": "987654",
+                "account_number": "987634"
+            },
+            "to_account": {
+                "sort_code": "987654",
+                "account_number": "43214322",
+                "name": "Andrew"
+            },
+            "display_name": "Andrew",
+            "reference": "882423434",
+            "permissions": {
+                "can_edit_reference": true,
+                "can_set_date_in_future": true,
+                "can_delete": true
+            }
+        },
+        {
+            "id": "4ffcfd9d-c1b4-4a65-a694-b347711612e7",
+            "account": {
+                "id": "b80e95a0-6b60-45b2-8b0f-77f2355f3061",
+                "sort_code": "987654",
+                "account_number": "23456789"
+            },
+            "to_account": {
+                "sort_code": "987656",
+                "account_number": "43214323",
+                "name": "William"
+            },
+            "display_name": "William",
+            "reference": "882423435",
+            "permissions": {
+                "can_edit_reference": true,
+                "can_set_date_in_future": true,
+                "can_delete": true
+            }
+        }
+    ]
+}

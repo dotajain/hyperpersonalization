@@ -3,36 +3,27 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
-import { login } from '../../actions';
-import Form from './Form';
+import { getCustomers } from '../../actions';
 
-const Login = ({ user, login }) => {
-  const handleSubmit = e => {
+import Header from '../Header';
+
+const Login = ({ ...props, user, getCustomers }) => {
+  console.log(props);
+  const handleNextPage = (e, id) => {
     e.preventDefault();
-    const { email: { value: email }, password: { value: password } } = e.target;
-    login({ email, password });
+    if(id === 1) {
+      props.history.push('/customer');
+      getCustomers();
+    }
+    if (id === 2) {
+      props.history.push('/offers');
+    }
   };
 
   return (
     <div className="b">
       <div className="one-column-container">
-        <div className="PageHeader PageHeader--b">
-          <div className="PageHeader__image col-xs-12">
-            <div className="row">
-              <div className="col-xs-12">
-                <div className="PageHeader__logo">
-                  B Logo
-                  <h2>Powered by Clydesdale Bank &amp; Yorkshire Bank</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="PageHeader__title col-xs-12">
-                <h1>Login</h1>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Header title="Login" />
         <div className="main-body container">
           <div className="row">
             <div className="mb-1 col-xs-12 col-sm-8 col-md-8 col-lg-7 offset-lg-1">
@@ -42,7 +33,7 @@ const Login = ({ user, login }) => {
                     <h2>Your details</h2>
                     <div>
                       <div className="panel">
-                        <div className="has-error form-group">
+                        <div className="form-group">
                           <div className="row">
                             <div className="col-xs-12 col-md-12 col-lg-12">
                               <div className="label">
@@ -65,22 +56,7 @@ const Login = ({ user, login }) => {
                               </div>
                             </div>
                           </div>
-                          <div className="row">
-                            <div className="col-xs-12 col-md-12 col-lg-12">
-                              <div aria-live="assertive" className="validation-error alert alert-warning" role="alert">
-                                <p>
-                                  Oops, that does not seem right. Your customer number should be 10 digits long starting with 10
-                                  or 30 and your username should be 6–16 characters long using letters and numbers only. It is
-                                  case sensitive too. Can not remember them? Enter your personal details instead or get in touch.
-                                  </p>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                        <a className="btn btn-link" href="#">Or enter your personal details</a>
-                      </div>
-                      <div>
-                        <button type="button" className="btn btn-secondary">Cancel</button>
                       </div>
                       <button type="submit" className="btn btn-primary">
                         <span className="btn__text--right">
@@ -99,9 +75,9 @@ const Login = ({ user, login }) => {
             <div className="col-xs-12 col-sm-8 col-lg-3">
               <div className="need-help">
                 <h4>Need help?</h4>
-                <button type="submit" className="need-help__btn btn btn-secondary">
+                <button type="button" onClick={(e) => handleNextPage(e, 1)} className="need-help__btn btn btn-secondary active">
                   <span className="btn__text--right">
-                    Visit help centre
+                    View All Customers
                     <svg className="btn__icon--right" width="16" height="16" viewBox="0 0 16 16">
                       <path fillRule="evenodd" d="M6.5 9.775l.917.942 2.782-2.859L7.417 5l-.917.942 1.866 1.916">
                       </path>
@@ -109,9 +85,9 @@ const Login = ({ user, login }) => {
                   </span>
                 </button>
                 <div className="egain-chat">
-                  <button type="submit" className="egain-chat__btn btn btn-secondary">
+                  <button type="button" onClick={(e) => handleNextPage(e, 2)} className="need-help__btn btn btn-secondary">
                     <span className="btn__text--right">
-                      Chat now
+                      View All Offers
                       <svg className="btn__icon--right" width="16" height="16" viewBox="0 0 16 16">
                         <path fillRule="evenodd" d="M6.5 9.775l.917.942 2.782-2.859L7.417 5l-.917.942 1.866 1.916">
                         </path>
@@ -125,7 +101,6 @@ const Login = ({ user, login }) => {
           </div>
         </div>
         <div className="footer">
-          <Form onSubmit={handleSubmit} />
           <div className="container">
             <p>
               You can find impartial information and guidance on money matters on the &nbsp;
@@ -144,8 +119,9 @@ const Login = ({ user, login }) => {
 
 Login.propTypes = {
   user: PropTypes.shape({}).isRequired,
-  login: PropTypes.func.isRequired,
+  history: PropTypes.object,
+  getCustomers: PropTypes.func,
 };
 
 const mapStateToProps = state => ({ user: state.user });
-export default connect(mapStateToProps, { login })(Login);
+export default connect(mapStateToProps, { getCustomers })(Login);

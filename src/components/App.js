@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Route, Redirect, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import Async from 'react-code-splitting';
 
 import Login from './Auth/Login';
-import Header from './Header';
+// import Header from './Header';
 
-const Home = () => <Async load={import('./Home')} />;
+const Customer = () => <Async load={import('./Customer')} />;
+const Offers = () => <Async load={import('./Offers')} />;
 
-const App = ({ user }) => (
+const App = ({ ...props }) => (
   <main>
-    {user.token ? <Header /> : null }
-    {user.token
-      ? <Route path="/" component={Home} />
-      : <Redirect to="/login" />}
-    <Route path="/login" component={Login} />
+    <Route exact path="/" component={Login} {...props} />
+    <Route exact path="/customer" component={Customer} {...props} />
+    <Route exact path="/offers" component={Offers} {...props} />
   </main>
 );
 

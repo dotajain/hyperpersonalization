@@ -1,0 +1,804 @@
+{
+  "tags": [
+    {
+      "name": "Shoes",
+      "path": "/shoes",
+      "scheme": "NAG Categories",
+      "id": 1,
+      "archived": false
+    },
+    {
+      "name": "Entertainment",
+      "path": "/entertainment",
+      "scheme": "NAG Categories",
+      "id": 2,
+      "archived": false
+    },
+    {
+      "name": "Finance",
+      "path": "/finance",
+      "scheme": "NAG Categories",
+      "id": 3,
+      "archived": false
+    },
+    {
+      "name": "Fuel",
+      "path": "/fuel",
+      "scheme": "NAG Categories",
+      "id": 4,
+      "archived": false
+    },
+    {
+      "name": "Getting around",
+      "path": "/getting around",
+      "scheme": "NAG Categories",
+      "id": 5,
+      "archived": false
+    },
+    {
+      "name": "Groceries",
+      "path": "/groceries",
+      "scheme": "NAG Categories",
+      "id": 6,
+      "archived": false
+    },
+    {
+      "name": "Holidays",
+      "path": "/holidays",
+      "scheme": "NAG Categories",
+      "id": 7,
+      "archived": false
+    },
+    {
+      "name": "Home",
+      "path": "/home",
+      "scheme": "NAG Categories",
+      "id": 8,
+      "archived": false
+    },
+    {
+      "name": "Keeping fit",
+      "path": "/keeping fit",
+      "scheme": "NAG Categories",
+      "id": 9,
+      "archived": false
+    },
+    {
+      "name": "Kids",
+      "path": "/kids",
+      "scheme": "NAG Categories",
+      "id": 10,
+      "archived": false
+    },
+    {
+      "name": "Mortgage or rent",
+      "path": "/mortgage or rent",
+      "scheme": "NAG Categories",
+      "id": 11,
+      "archived": false
+    },
+    {
+      "name": "Eating out",
+      "path": "/eating out",
+      "scheme": "NAG Categories",
+      "id": 12,
+      "archived": false
+    },
+    {
+      "name": "Tech",
+      "path": "/tech",
+      "scheme": "NAG Categories",
+      "id": 13,
+      "archived": false
+    },
+    {
+      "name": "Other",
+      "path": "/other",
+      "scheme": "NAG Categories",
+      "id": 14,
+      "archived": false
+    },
+    {
+      "name": "Pets",
+      "path": "/pets",
+      "scheme": "NAG Categories",
+      "id": 15,
+      "archived": false
+    },
+    {
+      "name": "School",
+      "path": "/school",
+      "scheme": "NAG Categories",
+      "id": 16,
+      "archived": false
+    },
+    {
+      "name": "Staying away",
+      "path": "/staying away",
+      "scheme": "NAG Categories",
+      "id": 17,
+      "archived": false
+    },
+    {
+      "name": "Style",
+      "path": "/style",
+      "scheme": "NAG Categories",
+      "id": 18,
+      "archived": false
+    },
+    {
+      "name": "Untagged",
+      "path": "/untagged",
+      "scheme": "NAG Categories",
+      "id": 19,
+      "archived": false
+    },
+    {
+      "name": "Utilities",
+      "path": "/utilities",
+      "scheme": "NAG Categories",
+      "id": 20,
+      "archived": false
+    },
+    {
+      "name": "Well being",
+      "path": "/well being",
+      "scheme": "NAG Categories",
+      "id": 21,
+      "archived": false
+    },
+    {
+      "name": "Earnings",
+      "path": "/earnings",
+      "scheme": "NAG Categories",
+      "id": 22,
+      "archived": false
+    }
+  ],
+  "customer": [
+    {
+      "id": "1",
+      "account": "B Current Account",
+      "number": "12345678",
+      "value": 53849.07,
+      "name": "Andrew",
+      "spendings": [
+        {
+          "name": "Shoes",
+          "path": "/shoes",
+          "scheme": "NAG Categories",
+          "id": 1,
+          "archived": false,
+          "value": 300.78
+        },
+        {
+          "name": "Entertainment",
+          "path": "/entertainment",
+          "scheme": "NAG Categories",
+          "id": 2,
+          "archived": false,
+          "value": 421.78
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "account": "B Saving Account",
+      "number": "23456789",
+      "value": 53849.07,
+      "name": "William",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "account": "B Current Account",
+      "number": "98736372",
+      "value": 13453.07,
+      "name": "David",
+      "spendings": [
+        {
+          "name": "Utilities",
+          "path": "/utilities",
+          "scheme": "NAG Categories",
+          "id": 20,
+          "archived": false,
+          "value": 800.78
+        },
+        {
+          "name": "Entertainment",
+          "path": "/entertainment",
+          "scheme": "NAG Categories",
+          "id": 2,
+          "archived": false,
+          "value": 421.78
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "account": "B Saving Account",
+      "number": "76872836",
+      "value": 242331.07,
+      "name": "Stephen Morning",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "account": "B Saving Account",
+      "number": "82739172",
+      "value": 53839.07,
+      "name": "Andrew",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "account": "B Saving Account",
+      "number": "72937291",
+      "value": 3433.07,
+      "name": "Byron Grote",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "account": "B Saving Account",
+      "number": "52372911",
+      "value": 784434.07,
+      "name": "Svanberg",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "account": "B Saving Account",
+      "number": "91381312",
+      "value": 9282.07,
+      "name": "Daniel Porter",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "account": "B Saving Account",
+      "number": "12323423",
+      "value": 63343.07,
+      "name": "Mount Royal",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "account": "B Saving Account",
+      "number": "98268721",
+      "value": 9131.07,
+      "name": "Donald Smith",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "account": "B Saving Account",
+      "number": "14133422",
+      "value": 242333.07,
+      "name": "Peter Sutherland",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "account": "B Saving Account",
+      "number": "55656672",
+      "value": 47263.07,
+      "name": "Rodney F. Chase",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "account": "B Saving Account",
+      "number": "66728271",
+      "value": 320112.14,
+      "name": "B Horton",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "account": "B Saving Account",
+      "number": "25444231",
+      "value": 4729,
+      "name": "Todd Palin",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "account": "B Saving Account",
+      "number": "83728882",
+      "value": 77291.93,
+      "name": "Tony Hayward",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "account": "B Saving Account",
+      "number": "97881133",
+      "value": 42241.13,
+      "name": "Robert Redford",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "account": "B Saving Account",
+      "number": "675566771",
+      "value": 876271.13,
+      "name": "Alison O'donnel",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "account": "B Saving Account",
+      "number": "81933133",
+      "value": 4938.63,
+      "name": "Step Brother",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "account": "B Saving Account",
+      "number": "77871166",
+      "value": 99878.32,
+      "name": "Kim Williams",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "account": "B Saving Account",
+      "number": "44556677",
+      "value": 88771.55,
+      "name": "James Ryan",
+      "spendings": [
+        {
+          "name": "Home",
+          "path": "/home",
+          "scheme": "NAG Categories",
+          "id": 8,
+          "archived": false,
+          "value": 421.66
+        },
+        {
+          "name": "Keeping fit",
+          "path": "/keeping fit",
+          "scheme": "NAG Categories",
+          "id": 9,
+          "archived": false,
+          "value": 21.8
+        },
+        {
+          "name": "Kids",
+          "path": "/kids",
+          "scheme": "NAG Categories",
+          "id": 10,
+          "archived": false,
+          "value": 871.89
+        }
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ export const post = async ({ url, body, success, failure, dispatch }) => {
 export const get = async ({ url, success, failure, dispatch }) => {
   try {
     const res = await fetch(url, {
-      method: 'POST',
+      method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
