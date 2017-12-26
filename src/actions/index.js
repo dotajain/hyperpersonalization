@@ -19,6 +19,16 @@ export const getCustomers = () => dispatch => {
   });
 };
 
+export const getOffers = () => dispatch => {
+  dispatch({ type: types.OFFER_REQUEST });
+  get({
+    url: urls.OFFER,
+    success: types.OFFER_SUCCESS,
+    failure: types.OFFER_FAILURE,
+    dispatch,
+  });
+};
+
 export const logout = () => dispatch => {
   dispatch({ type: types.LOGOUT_REQUEST });
 };

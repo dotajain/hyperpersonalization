@@ -4,6 +4,7 @@ const initialState = {
   pageId: 0,
   token: '',
   customers: '',
+  offers: '',
 };
 
 const user = (state = initialState, action) => {
@@ -19,6 +20,8 @@ const user = (state = initialState, action) => {
     return {...state, pageId: action.data};
   case types.CUSTOMER_SUCCESS:
     return {...state, customers: action.data};
+  case types.OFFER_SUCCESS:
+    return {...state, offers: action.data};
   default:
     return state;
   }

@@ -17,6 +17,8 @@
 @include font-face(GalanoGrotesqueRegular, '../fonts/GalanoGrotesque-Regular', 'woff', 'woff');
 @include font-face(GalanoGrotesqueSemiBold, '../fonts/GalanoGrotesque-SemiBold', 'woff', 'woff');
 
+@include font-face(webfonts, '../fonts/webfonts', 'woff', 'woff');
+
 // B-App font
 @include font-face(GalanoGrotesqueMedium, '../fonts/GalanoGrotesque-Medium', 'woff', 'woff');
 @include font-face(GalanoGrotesqueBold, '../fonts/GalanoGrotesque-Bold', 'woff', 'woff');
@@ -28,3 +30,4 @@ $font-medium: GalanoGrotesqueMedium;
 $font-medium-italic: GalanoGrotesqueMediumItalic;
 $font-semi-bold: GalanoGrotesqueSemiBold;
 $font-bold: GalanoGrotesqueBold;
+$webfonts: webfonts;

@@ -1,20 +1,24 @@
 *, *:before, *:after{
   -webkit-font-smoothing: antialiased;
 }
+
 body {
   line-height: 1.2;
   background-color: #fff;
   color: $gray;
 }
+html, body {
+  font-size: 18px;
+}
 body, button, a, input {
   font-family: $font-regular;
 }
 
-img {
-    max-width: 100%;
-    height: inherit;
-    vertical-align: top;
-}
+// img {
+//   max-width: 100%;
+//   height: inherit;
+//   vertical-align: top;
+// }
 // a, button, .btn {
 //   text-decoration: none;
 //   color: $blue;

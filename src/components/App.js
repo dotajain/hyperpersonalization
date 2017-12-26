@@ -11,11 +11,11 @@ const Customer = () => <Async load={import('./Customer')} />;
 const Offers = () => <Async load={import('./Offers')} />;
 
 const App = ({ ...props }) => (
-  <main>
+  <div id="react">
     <Route exact path="/" component={Login} {...props} />
     <Route exact path="/customer" component={Customer} {...props} />
     <Route exact path="/offers" component={Offers} {...props} />
-  </main>
+  </div>
 );
 
 App.propTypes = {
